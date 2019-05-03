@@ -1,0 +1,21 @@
+#!/bin/bash
+
+export NEWLS_CLR='\033[38;5;51m'
+#tree -di -L 1 -C --noreport > ~/.tree-dir.tmp
+#\ls --color=always --group-directories-first -x -F -w 144 | grep -v / > ~/.ls.tmp
+
+
+printf ""$NEWLS_CLR"┏━ \033[38;5;15mDirectories: "$NEWLS_CLR"━━━━━━━━━━┳━ \033[38;5;15mFiles: "$NEWLS_CLR"━"; printf '━%.s' $(seq 39 $COLUMNS); printf ""$NEWLS_CLR"┓\033[m\n";
+
+#━
+#┃
+#┏
+#┓
+#┗
+#┛
+#┣
+#┫
+#┳
+#┻
+#╋
+#━
